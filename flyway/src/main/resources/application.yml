@@ -7,3 +7,6 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   flyway:
     baseline-on-migrate: true
+  batch:
+#    每次都重新建表
+    initialize-schema: always
